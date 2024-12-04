@@ -1,12 +1,99 @@
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
+
+:root {
+  --primary: hsl(160deg, 100%, 30%);
+  --secondary-light: hsl(45deg, 100%, 50%);
+  --secondary-dark: hsl(45deg, 100%, 40%);
+  --black: hsl(0deg, 0%, 0%);
+  --very-dark: hsl(0deg, 0%, 10%);
+  --dark: hsl(0deg, 0%, 30%);
+  --medium: hsl(0deg, 0%, 40%);
+  --light: hsl(0deg, 0%, 60%);
+  --white: hsl(0deg, 0%, 100%);
+  --f-1: 1rem;
+  --f-2: 1.25rem;
+  --f-3: 1.5rem;
+  --f-4: 2rem;
+}
+
+/* 8px
+16px
+24px
+32px
+48px
+64px
+96px
+128px 
+256px
+*/
 
 html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+}
+
+* {
+  margin: 0;
 }
 
 /* Add styles here! */
+
+strong {
+  color: var(--primary);
+}
+
+h2 {
+  font-size: var(--f-2);
+}
+
+.title {
+  margin-bottom: 48px;
+}
+
+p:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.max-width-wrapper {
+  max-width: 632px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-chunk {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 96px;
+  margin-bottom: 64px;
+}
+
+.intro-chunk p {
+  max-width: 320px;
+}
+
+main {
+  border-top: 8px solid var(--light);
+  background-color: var(--medium);
+  height: calc(100% - 340.5px);
+}
+
+.card {
+  background-color: var(--white);
+  padding: 8px 16px 16px 16px;
+  border-bottom: 8px solid var(--light);
+  margin-top: 48px;
+}
+
+.indented-heading {
+  background-color: var(--secondary-light);
+  border-bottom: 8px solid var(--secondary-dark);
+  margin-left: -24px;
+  width: fit-content;
+  padding: 16px 24px;
+  margin-bottom: 16px;
+}
